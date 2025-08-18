@@ -22,9 +22,9 @@ export const EditCarDialog = ({ car }: EditCarDialogProps) => {
     category: car.category,
     transmission: car.transmission,
     fuel: car.fuel,
-    seats: car.seats.toString(),
+    seats: car.seats?.toString(),
     image: car.image,
-    available: car.available
+    available: car.available,
   });
 
   const handleSubmit = async (e: React.FormEvent) => {
